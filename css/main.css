@@ -1,0 +1,124 @@
+@import url(_reset.css);
+
+.body {
+    color: #FFFFFF;
+
+    min-height: 100vh;
+
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 2rem;
+}
+
+@media screen and (min-width: 1440px) {
+    .body {
+        padding: 2rem calc((100vw - 1086px)/2);
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo__container {
+    display: flex;
+    align-items: center;
+}
+
+.imagem_logo {
+    width: 80px;
+    margin-right: 20px;
+}
+
+.nome__logo {
+    color: black;
+    font-family: 'Press Start 2P';
+    font-size: 32px;
+}
+    
+.divisor__line {
+    margin: 50px 0px 40px;
+    height: 2px;
+    width: 564px;
+    background-color: #0f2027;
+}
+
+.page-title {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    margin-bottom: 2.5rem;
+}
+
+.page-title__emphasis {
+    color: #0f2027;
+}
+
+.dashboard {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 2rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #0f2027;
+    padding: 3rem;
+    width: 100%;
+}
+
+.dashboard__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboard__items__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Inter', sans-serif;
+}
+
+.dashboard__item__img {
+    box-shadow: 0px 0px 24px 8px rgba(24, 118, 232, 0.25);
+    margin-bottom: 1rem;
+}
+
+.dashboard__item__img--rented {
+    position: relative;
+}
+
+.dashboard__item__img--rented::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(1, 8, 14, 0.4);
+}
+
+.dashboard__item__name {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.dashboard__item__button {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+    min-width: 13rem;
+    border-radius: 1rem;
+    background-color: #3f7385;
+}
+
+.dashboard__item__button--return {
+    background-color: #1b343f;
+}
